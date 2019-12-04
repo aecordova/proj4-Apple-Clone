@@ -1,0 +1,55 @@
+/*  General */
+*{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*  Header  */
+header{
+  display: flex;
+  justify-content: center;
+}
+.nav-bar{
+m
+}
+.nav-list{
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li{
+  list-style-type: none;
+  height: 36px;
+  line-height: 36px;
+  width: 100px;  
+}
+
+form{
+  height: 19.5px;
+}
+
+input{
+  height: 16px;
+  border: none;
+}
+/* Main Section */
+
+.hero{
+  background: url("images/main_background.jpg") 50% 100% no-repeat;
+  width: 1440px;
+  height: 600px;
+  background-size: 1440px 1315px;
+  justify-content: center;
+}
+.promos{
+  display: flex;
+}
