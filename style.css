@@ -5,18 +5,20 @@
 body{
   display: flex;
   flex-direction: column;
-
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  margin: 0;
+  font-family: 'Lucida Grande','Lucida Sans', 'Lucida Sans Regular',  'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 14px;
 }
 
 /*  Header  */
 header{
   display: flex;
   justify-content: center;
+  
 }
 .nav-bar{
-m
+  position: absolute;
+  margin-top: 5%;
 }
 .nav-list{
   display: flex;
@@ -44,12 +46,67 @@ input{
 /* Main Section */
 
 .hero{
-  background: url("images/main_background.jpg") 50% 100% no-repeat;
-  width: 1440px;
-  height: 600px;
-  background-size: 1440px 1315px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  background: url("images/main_background.jpg") 50% 100% no-repeat;
+  width: 100%;
+  height: 600px;
+  background-size: 100% 1350px;
 }
 .promos{
   display: flex;
+  justify-content: space-around;
+}
+.promos img{
+  width: 100%;
+}
+
+/* Footer Section */
+
+footer{
+  margin: 10px auto;
+  width: 80%;
+  font-size: .8em;
+  color: gray;
+}
+footer a{
+  color: #08c;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+.footer-text{
+  float: left;
+  width: 50%;
+}
+.footer-text-links{
+  padding: 5px;
+  border-right: 1px solid lightgray;
+  line-height: 10px;
+}
+.footer-text-links:last-child{
+  border: none;
+}
+.footer-links{
+  float: right;
+  width: 50%;
+}
+.footer-links ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links li{
+  list-style-type: none;
+  width: fit-content;
+  text-align: center;
+  padding-right: 10px;
+  border-right: 1px solid lightgray;
+}
+.footer-links li:last-child{
+  border-right: none;
 }
