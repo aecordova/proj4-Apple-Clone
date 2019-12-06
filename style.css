@@ -13,35 +13,83 @@ body{
 /*  Header  */
 header{
   display: flex;
-  justify-content: center;
-  
+  justify-content: center;  
 }
+
 .nav-bar{
   position: absolute;
   margin-top: 5%;
+  height: 40px;
+  width: 70%;
+  background-image: url("images/nav_bg.png"),linear-gradient(to bottom, rgba(92,92,92,1) 0%, rgba(92,89,92,1) 51%, rgba(163,163,163,1) 78%, rgba(199,199,199,1) 100%);
+  border-radius:  5px;
 }
+
 .nav-list{
   display: flex;
-  width: fit-content;
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  justify-content: space-around;
 }
 
 .nav-list li{
   list-style-type: none;
   height: 36px;
   line-height: 36px;
-  width: 100px;  
+  width: 100%;
+  text-align: center;
+  border-right:1px solid rgba(0,0,0,.2);
+}
+.nav-list li:last-child{
+  border-right: none;
+  margin: 2px;
+}
+
+.nav-list a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 3px auto;
+}
+
+.nav-1 {
+  background: url("images/globalnav_text.svg") no-repeat 50% 0;
+}
+.nav-2{
+  background: url("images/globalnav_text.svg") no-repeat 50% -30px;
+}
+.nav-3{
+  background: url("images/globalnav_text.svg") no-repeat 50% -60px;
+}
+.nav-4{
+  background: url("images/globalnav_text.svg") no-repeat 50% -90px;
+}
+.nav-5{
+  background: url("images/globalnav_text.svg") no-repeat 50% -120px;
+}
+.nav-6{
+  background: url("images/globalnav_text.svg") no-repeat 50% -150px;
+}
+.nav-7{
+  background: url("images/globalnav_text.svg") no-repeat 50% -180px;
+}
+.nav-8{
+  background: url("images/globalnav_text.svg") no-repeat 50% -210px;
 }
 
 form{
   height: 19.5px;
 }
-
 input{
-  height: 16px;
+  height: 25px;
   border: none;
+  border-radius: 10px;
+  margin: 0 5px;
+  background: url("images/icon_mag.png")no-repeat 7px ;
+  padding-left:30px;
+  border:2px solid rgba(0,0,0,.2);
 }
 /* Main Section */
 
@@ -55,12 +103,40 @@ input{
   height: 600px;
   background-size: 100% 1350px;
 }
+.hero-title {
+  display: block;
+  width: 70%;
+  height: 100px;
+}
+.hero-title a{
+  display: block;
+  width: 100%;
+  height: 100px;
+  background: url("images/your_verse_title_small.png")  no-repeat;
+}
+.hero-video {
+  display: block;
+  margin-top: 30px;
+  width: 70%;
+  height: 100px;
+}
+.hero-video a{
+  display: block;
+  width: 100%;
+  height: 31px;
+  background: url("images/cta_your_verse_27pt.png") 0 -0px no-repeat;
+  
+}
+.hero-video a:hover{
+  background: url("images/cta_your_verse_27pt.png") 0 -33px no-repeat;
+}
 .promos{
   display: flex;
   justify-content: space-around;
 }
 .promos img{
   width: 100%;
+  padding: 1px;
 }
 
 /* Footer Section */
